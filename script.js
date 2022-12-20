@@ -100,22 +100,86 @@ checkwinner(scoredolphinss,scorekoalass);
 */
 
 //Coding chanllenge 2
-
+/*
 const calcTip = bill => bill >=50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 const bills = [125,555,44];
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills , tips,totals);
+*/
+
+//Coding challenge 3
+/*
+const mark = {
+    fullname: 'Mark Miller', 
+    mass: 78,
+    height: 1.69,
+    calcBMI: function(){
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    } 
+};
+
+const john = {
+    fullname: 'John Smith', 
+    mass: 92,
+    height: 1.95,
+    calcBMI: function(){
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    } 
+};
+
+mark.calcBMI();
+john.calcBMI();
+console.log(mark.bmi, john.bmi);
+
+if(mark.bmi > john.bmi){
+    console.log(`${mark.fullname}'s BMI (${mark.bmi}) is higher than ${john.fullname}'s BMI (${john.bmi})`);
+}else if(john.bmi > mark.bmi){
+    console.log(`${john.fullname}'s BMI (${john.bmi}) is higher than ${mark.fullname}'s BMI (${mark.bmi})`);
+}
+*/
+
+//Code challenge 4
+/*
+const calcTip = function(bill) {
+    return bill >=50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+ 
+
+} 
+const bills = [22,295,176,440,37,105,10,1100,86,52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++){
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+}
+console.log(bills, tips, totals);
+
+const calAvg = function(arr){
+    let sum = 0;
+    for (let i=0; i<arr.length; i++){
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+console.log(calAvg([2,3,7]));
+console.log(calAvg(totals));
+console.log(calAvg(tips));
+*/
+/*
+"use strict";
+
+const x = "23";
+if(x === 23) console.log(23);
 
 
-
-
-
-
-
-
-
-
+const calcage = (birthyear) => 2037 - birthyear;
+console.log("jakir");
+*/
 
 
 
